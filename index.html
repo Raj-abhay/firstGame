@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic tac toe</title>
+    <link rel="stylesheet" href="styal.css"/>
+</head>
+<body>
+    <div class="msg-container hide">
+        <p id="msg">winner</p>
+        
+        <button id="new-btn">new game</button>
+        
+    </div>
+    <div id="score-board" class="hide">
+  <p>O: <span id="score-o">0</span> | X: <span id="score-x">0</span></p>
+</div>
+  <main>
+    <h1>Tic Tac Toe</h1>
+    <div class="top-controls">
+     <div class="mode">
+     <button id="Quick-Mode">Quick mode</button>
+      <button id="Tournamnet">Tournamnet</button>
+</div>
+<p id="mode-msg" style="color: #ffffc7; font-size: 1.2rem; margin-top: 1rem;"></p>
+
+
+    <div class="mode-select">
+        <label for="mode-select">Select Mode:</label>
+        <select id="mode-select">
+            <option value="2player">Play with friend</option>
+            <option value="bot">Bot</option>
+        </select>
+
+</div>
+
+
+    <div class="container">
+    <div class="game">
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+
+    </div>
+</div>
+
+ <button id="reset-btn">reset game</button>
+    
+</div>
+
+  </main> 
+  <script src="app.js"></script>
+</body>
+</html>
